@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "Слэб орех 1",
+    "species": "Орех",
+    "type": "Слэб",
+    "length": 200,
+    "width": 60,
+    "thickness": 5,
+    "price": 5000,
+    "image": "https://images.pexels.com/photos/593152/pexels-photo-593152.jpeg",
+    "description": "Красивый слэб из ореха с натуральной кромкой."
+  },
+  {
+    "id": "2",
+    "title": "Коряга дуб 1",
+    "species": "Дуб",
+    "type": "Коряга",
+    "length": 80,
+    "width": 40,
+    "thickness": 20,
+    "price": 3500,
+    "image": "https://images.pexels.com/photos/593152/pexels-photo-593152.jpeg",
+    "description": "Уникальная коряга дуба для декоративных проектов."
+  },
+  {
+    "id": "3",
+    "title": "Пень ясень 1",
+    "species": "Ясень",
+    "type": "Пень",
+    "length": 50,
+    "width": 50,
+    "thickness": 30,
+    "price": 4000,
+    "image": "https://images.pexels.com/photos/593152/pexels-photo-593152.jpeg",
+    "description": "Пень из ясеня, идеально подходит для журнального столика."
+  }
+]

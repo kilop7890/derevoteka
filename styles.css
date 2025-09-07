@@ -1,0 +1,150 @@
+/* Основные стили для сайта "Деревотека" */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+header nav a {
+  color: #fff;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#filters {
+  background-color: #eee;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+#filters label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+#filters input,
+#filters select {
+  padding: 0.3rem;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+#applyFilters {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#applyFilters:hover {
+  background-color: #555;
+}
+
+main#productList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: flex-start;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: calc(33% - 2rem);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.product-card a {
+  margin-top: auto;
+  align-self: flex-start;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.product-card a:hover {
+  text-decoration: underline;
+}
+
+#productDetail {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.product-detail {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  max-width: 800px;
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #ccc;
+}
+
+.product-detail img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-detail .info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.product-detail .info h2 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

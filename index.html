@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Деревотека</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Деревотека</h1>
+      <nav>
+        <a href="index.html">Каталог</a>
+      </nav>
+    </header>
+
+    <section id="filters">
+      <label>
+        Порода:
+        <select id="speciesFilter">
+          <option value="">Все</option>
+        </select>
+      </label>
+      <label>
+        Тип:
+        <select id="typeFilter">
+          <option value="">Все</option>
+        </select>
+      </label>
+      <label>
+        Длина от (см):
+        <input type="number" id="minLengthFilter" placeholder="мин" />
+      </label>
+      <label>
+        Длина до (см):
+        <input type="number" id="maxLengthFilter" placeholder="макс" />
+      </label>
+      <button id="applyFilters">Применить</button>
+    </section>
+
+    <main id="productList"></main>
+
+    <footer>
+      <p>&copy; 2025 Деревотека</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Деревотека – товар</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">Деревотека</a></h1>
+    </header>
+    <main id="productDetail">
+      <!-- Детали товара будут загружены скриптом -->
+    </main>
+    <footer>
+      <p>&copy; 2025 Деревотека</p>
+    </footer>
+    <script>
+      // Получение параметра из URL
+      function getQueryParam(name) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(name);
+      }
+      // Загрузка каталога и отображение выбранного товара
+      fetch('catalog.json')
+        .then((response) => response.json())
+        .then((data) => {
+          const id = getQueryParam('id');
+          const product = data.find((item) => item.id === id);
+          const container = document.getElementById('productDetail');
+          if (!product) {
+            container.textContent = 'Товар не найден.';
+            return;
+          }
+          container.innerHTML = `
+            <div class="product-detail">
+              <img src="${product.image}" alt="${product.title}">
+              <div class="info">
+                <h2>${product.title}</h2>
+                <p><strong>Порода:</strong> ${product.species}</p>
+                <p><strong>Тип:</strong> ${product.type}</p>
+                <p><strong>Длина:</strong> ${product.length} см</p>
+                <p><strong>Ширина:</strong> ${product.width} см</p>
+                <p><strong>Толщина:</strong> ${product.thickness} см</p>
+                <p><strong>Цена:</strong> ${product.price} ₽</p>
+                <p>${product.description}</p>
+              </div>
+            </div>
+          `;
+        })
+        .catch((err) => {
+          document.getElementById('productDetail').textContent =
+            'Ошибка загрузки данных.';
+          console.error(err);
+        });
+    </script>
+  </body>
+</html>
