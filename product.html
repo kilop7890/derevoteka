@@ -18,7 +18,9 @@
       <div class="container">
         <h1 class="logo"><a href="index.html">Деревотека</a></h1>
         <nav>
+          <a href="index.html#brand-code">Бренд‑код</a>
           <a href="index.html#catalog">Каталог</a>
+          <a href="index.html#inspiration">Вдохновение</a>
           <a href="index.html#about">О&nbsp;нас</a>
           <a href="index.html#contact">Контакты</a>
         </nav>
@@ -30,7 +32,9 @@
       </div>
     </main>
     <footer>
-      <p>&copy; 2025 Деревотека</p>
+      <div class="container">
+        <p>&copy; 2025 Деревотека. Все права защищены.</p>
+      </div>
     </footer>
     <script>
       // Получение параметра из URL
@@ -38,8 +42,8 @@
         const params = new URLSearchParams(window.location.search);
         return params.get(name);
       }
-      // Загрузка каталога и отображение выбранного товара
-      fetch('catalog.json')
+      // Загрузка каталога (с принудительным обновлением) и отображение выбранного товара
+      fetch(`catalog.json?v=${Date.now()}`)
         .then((response) => response.json())
         .then((data) => {
           const id = getQueryParam('id');
