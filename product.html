@@ -3,15 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Деревотека – товар</title>
+    <title>Деревотека — товар</title>
+    <!-- Подключаем Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1><a href="index.html">Деревотека</a></h1>
+      <div class="container">
+        <h1 class="logo"><a href="index.html">Деревотека</a></h1>
+        <nav>
+          <a href="index.html#catalog">Каталог</a>
+          <a href="index.html#about">О&nbsp;нас</a>
+          <a href="index.html#contact">Контакты</a>
+        </nav>
+      </div>
     </header>
     <main id="productDetail">
-      <!-- Детали товара будут загружены скриптом -->
+      <div class="container">
+        <!-- Детали товара будут загружены скриптом -->
+      </div>
     </main>
     <footer>
       <p>&copy; 2025 Деревотека</p>
@@ -28,7 +44,7 @@
         .then((data) => {
           const id = getQueryParam('id');
           const product = data.find((item) => item.id === id);
-          const container = document.getElementById('productDetail');
+          const container = document.querySelector('#productDetail .container');
           if (!product) {
             container.textContent = 'Товар не найден.';
             return;

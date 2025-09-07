@@ -34,5 +34,113 @@
     "price": 4000,
     "image": "https://images.pexels.com/photos/593152/pexels-photo-593152.jpeg",
     "description": "Пень из ясеня, идеально подходит для журнального столика."
+  },
+  {
+    "id": "4",
+    "title": "Слэб дуб 2",
+    "species": "Дуб",
+    "type": "Слэб",
+    "length": 220,
+    "width": 70,
+    "thickness": 6,
+    "price": 7000,
+    "image": "https://images.pexels.com/photos/593152/pexels-photo-593152.jpeg",
+    "description": "Большой дубовый слэб с красивой текстурой."
+  },
+  {
+    "id": "5",
+    "title": "Слэб карагач 1",
+    "species": "Карагач",
+    "type": "Слэб",
+    "length": 180,
+    "width": 55,
+    "thickness": 5,
+    "price": 6500,
+    "image": "https://images.pexels.com/photos/593152/pexels-photo-593152.jpeg",
+    "description": "Слэб карагача с богатым рисунком и яркими переходами."
+  },
+  {
+    "id": "6",
+    "title": "Коряга сосна 1",
+    "species": "Сосна",
+    "type": "Коряга",
+    "length": 90,
+    "width": 35,
+    "thickness": 18,
+    "price": 3000,
+    "image": "https://images.pexels.com/photos/593152/pexels-photo-593152.jpeg",
+    "description": "Сосновая коряга, отлично подходит для декора."
+  },
+  {
+    "id": "7",
+    "title": "Спил берёза 1",
+    "species": "Берёза",
+    "type": "Спил",
+    "length": 40,
+    "width": 40,
+    "thickness": 5,
+    "price": 2000,
+    "image": "https://images.pexels.com/photos/593152/pexels-photo-593152.jpeg",
+    "description": "Круглый спил берёзы для творческих проектов."
+  },
+  {
+    "id": "8",
+    "title": "Брус ясень 1",
+    "species": "Ясень",
+    "type": "Брус",
+    "length": 150,
+    "width": 10,
+    "thickness": 10,
+    "price": 4500,
+    "image": "https://images.pexels.com/photos/593152/pexels-photo-593152.jpeg",
+    "description": "Прочный брус из ясеня для мебели или интерьера."
+  },
+  {
+    "id": "9",
+    "title": "Пень сосна 2",
+    "species": "Сосна",
+    "type": "Пень",
+    "length": 60,
+    "width": 60,
+    "thickness": 40,
+    "price": 3800,
+    "image": "https://images.pexels.com/photos/593152/pexels-photo-593152.jpeg",
+    "description": "Сосновый пень, можно использовать как табурет или столик."
+  },
+  {
+    "id": "10",
+    "title": "Слэб клен 1",
+    "species": "Клен",
+    "type": "Слэб",
+    "length": 190,
+    "width": 65,
+    "thickness": 5,
+    "price": 5500,
+    "image": "https://images.pexels.com/photos/593152/pexels-photo-593152.jpeg",
+    "description": "Кленовый слэб светлого оттенка."
+  },
+  {
+    "id": "11",
+    "title": "Коряга вяз 1",
+    "species": "Вяз",
+    "type": "Коряга",
+    "length": 85,
+    "width": 50,
+    "thickness": 22,
+    "price": 4200,
+    "image": "https://images.pexels.com/photos/593152/pexels-photo-593152.jpeg",
+    "description": "Коряга из вяза с замысловатой формой."
+  },
+  {
+    "id": "12",
+    "title": "Спил дуб 2",
+    "species": "Дуб",
+    "type": "Спил",
+    "length": 35,
+    "width": 35,
+    "thickness": 6,
+    "price": 2300,
+    "image": "https://images.pexels.com/photos/593152/pexels-photo-593152.jpeg",
+    "description": "Спил дуба с яркими годичными кольцами."
   }
 ]
