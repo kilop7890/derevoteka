@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Загрузка каталога данных
-  fetch('catalog.json')
+  // Fetch catalog with cache busting query param to ensure the latest version is loaded.
+  // Appending a timestamp prevents the browser from using a stale cached copy of catalog.json.
+  fetch(`catalog.json?v=${Date.now()}`)
     .then((response) => response.json())
     .then((data) => {
       // Сохраняем данные глобально для фильтрации
